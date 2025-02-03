@@ -1,0 +1,17 @@
+.complaintButton {
+    background-color: var(--primary-color-dark);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: .4rem .7rem;
+    border-radius: .5rem;
+    z-index: 1000;
+}
+
+.complaintButton:hover {
+    background-color: rgba(9, 37, 37, 0.84);
+}

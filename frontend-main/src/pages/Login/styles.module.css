@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginBox {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.logoContainer {
+    margin-bottom: 1.125rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo {
+    max-width: 100px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.googleButton {
+    margin-top: 2rem;
+}
+
+.googleSignin {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #757575;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    padding: 0.625rem 1.125rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.googleSignin:hover {
+    background-color: #f8f8f8;
+    color: #333333;
+}
+
+.googleSignin:active {
+    background-color: #e0e0e0;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.625rem;
+}
+
+.googleImage {
+    width: 20px;
+    height: 20px;
+}
+
+.illustrationContainer {
+    margin-left: 40px;
+}
+
+.illustration {
+    max-width: 400px;
+    height: 20.32rem;
+}

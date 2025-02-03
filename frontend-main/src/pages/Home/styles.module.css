@@ -1,0 +1,23 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    gap: 1rem;
+}
+
+.complaintButton {
+    margin-top: 1rem;
+    padding: .75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--quinary-color);
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.complaintButton:hover {
+    background-color: var(--quaternary-color);
+    color: #ffffff;
+}

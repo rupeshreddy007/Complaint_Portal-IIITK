@@ -1,0 +1,18 @@
+.bottom_buttons_wrapper {
+    display: flex;
+    margin: 1.3rem;
+    border-radius: .3rem;
+    padding: 1rem 10rem;
+    gap: 2rem;
+}
+
+.delete , .accept {
+    background-color: indianred;
+    border-radius: .3rem;
+    padding: .5rem .7rem;
+}
+
+.accept {
+    background-color: var(--tertiary-color);
+}
+

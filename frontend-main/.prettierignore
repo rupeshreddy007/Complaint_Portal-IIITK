@@ -1,0 +1,39 @@
+*.env
+.env
+.env.*
+
+# Logs
+/logs
+*.log
+# Temporary files
+.tmp
+.temp
+
+# Build artifacts
+/build
+/dist
+
+# Dependency directories
+/node_modules
+/bower_components
+
+# IDE files
+.idea
+.vscode
+
+# Package files
+*.tar
+*.zip
+*.gz
+
+# Database files
+*.db
+*.sqlite
+
+# Generated files
+*.min.js
+*.min.css
+
+# Miscellaneous
+.DS_Store
+Thumbs.db

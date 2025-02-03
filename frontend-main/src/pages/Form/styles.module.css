@@ -1,0 +1,267 @@
+.wrapper {
+    min-height: 85vh;
+    background-color: var(--quinary-color);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.form {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 3rem;
+    height: 90%;
+    width: 100%;
+    border-radius: .5rem;
+    gap: 3rem;
+    label {
+        font-size: 1rem;
+    }
+    input {
+        padding: 1rem !important;
+        border-radius: .3rem;
+        font-size: 1.2rem;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+}
+
+
+
+.form_sub_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.28);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.required {
+    color: darkred;
+    margin-left: 3px;
+}
+
+.popup_remove {
+    position: relative;
+    top: -30%;
+    right: -45%;
+    padding: .5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.popup_items_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 30%;
+    background-color: gray;
+    border-radius: .4rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+    div {
+        background-color: darkgray;
+        padding: 1rem;
+    }
+}
+
+.items {
+    padding-left: .7rem;
+    padding-top: .3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs_label_wrapper {
+    /*background-color: var(--tertiary-color);*/
+    border-radius: .3rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 1rem 2rem;
+    width: fit-content;
+    place-items: center;
+    input {
+        height: 1.7rem;
+        padding: .2rem;
+        border-radius: 5px;
+        border: solid 1px white;
+    }
+    select {
+        width: max-content;
+        height: 1.7rem;
+        padding: .2rem;
+        border-radius: .3rem;
+        border: solid 1px white;
+    }
+}
+
+.location_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.location {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+textarea {
+    padding: .5rem;
+    border-radius: .3rem;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.date_wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.label_wrapper, .input_wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.label_wrapper {
+    margin-right: 2rem;
+}
+
+.personal_info_wrapper {
+}
+
+input[type="date"] {
+    padding: .3rem;
+    font-family: "Roboto Mono", monospace;
+    font-size: medium;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+}
+
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: .2rem;
+}
+
+input {
+    width: fit-content !important;
+}
+
+
+
+.buttons_wrapper {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.margin {
+    margin: 0;
+}
+
+/* file upload */
+input[type="file"] {
+    outline: none;
+    padding: 4px;
+  }
+  
+  input[type="file"]:focus-within::file-selector-button,
+  input[type="file"]:focus::file-selector-button {
+    outline: 2px solid #0964b0;
+    outline-offset: 2px;
+  }
+  
+  input[type="file"]::before {
+    top: 10px;
+  }
+  
+  input[type="file"]::after {
+    top: 14px;
+  }
+  
+  /* ------- From Step 2 ------- */
+  
+  input[type="file"] {
+    position: relative;
+  }
+  
+  input[type="file"]::file-selector-button {
+    width: 160px;
+    color: transparent;
+  }
+  
+  /* Faked label styles and icon */
+  input[type="file"]::before {
+    position: absolute;
+    pointer-events: none;
+    /*   top: 11px; */
+    left: 40px;
+    color: #0964b0;
+    content: "Upload File";
+  }
+  
+  input[type="file"]::after {
+    position: absolute;
+    pointer-events: none;
+    left: 16px;
+    height: 20px;
+    width: 20px;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+  }
+  
+  /* ------- From Step 1 ------- */
+  
+  /* file upload button */
+  input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+  }
+  
+  /* file upload button hover state */
+  input[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* file upload button active state */
+  input[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+  }
+  

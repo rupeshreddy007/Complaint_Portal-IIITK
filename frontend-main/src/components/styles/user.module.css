@@ -1,0 +1,24 @@
+.user {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    width: 100%;
+    gap: 1rem;
+    justify-items: self-start;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+.user:nth-last-of-type(1) {
+    border-radius: 0 0 1rem 1rem !important;
+}
+
+.user:nth-of-type(1) {
+    /*border-radius: 1rem 1rem 0rem 0rem !important;*/
+    position: sticky;
+    top: 0;
+    border-radius: 1rem 1rem 0 0 !important;
+    background-color: #64b5f6;
+
+}

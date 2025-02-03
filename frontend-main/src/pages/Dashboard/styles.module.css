@@ -1,0 +1,35 @@
+.dashboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+}
+
+.dashboard > div {
+    grid-column: span 1;
+}
+.solved_complaints_wrapper {
+    display: flex;
+    margin: 1rem;
+    height: calc((2)*95vh / 3);
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.complaints {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.solved_complaints {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
