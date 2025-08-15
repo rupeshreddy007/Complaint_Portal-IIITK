@@ -51,10 +51,10 @@ app.listen(PORT, serverIp, () => {
   console.log(`Server started on http://${serverIp}:${PORT}`);
 });
 
-import cors from 'cors';
+
 
 app.use(cors({
-  origin: 'https://your-frontend.vercel.app', // Replace with Vercel URL later
+  origin: 'https://vercel.com/rupeshs-projects-2c6583cf', // Replace with Vercel URL later
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
