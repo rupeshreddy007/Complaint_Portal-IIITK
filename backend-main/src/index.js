@@ -106,6 +106,13 @@ configureSession(app, store);
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.get("/", (req, res) => {
+  res.status(200).json({ 
+    status: "online", 
+    message: "Welcome to the Complaint Portal API!" 
+  });
+});
+
 // ✅ Health check route
 app.get("/health", (req, res) => {
   res.status(200).json({ message: "health is ok!" });
