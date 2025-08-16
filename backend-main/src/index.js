@@ -125,4 +125,7 @@ app.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 Server started on port ${PORT}`);
 });
 
-
+app.use((err, req, res, next) => {
+  console.error(err.stack); // This will print the detailed error to your Render logs
+  res.status(500).send('Something broke!');
+});
