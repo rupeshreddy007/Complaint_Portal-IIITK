@@ -39,16 +39,21 @@ export default Login;
 import React from 'react';
 
 const App = () => {
-    const apiRoutes = {
-        login: 'https://example.com/auth/google',
-    };
-
     const handleGoogleSignIn = () => {
-        if (apiRoutes.login) {
-            console.log(`Redirecting to: ${apiRoutes.login}`);
-            // window.open(apiRoutes.login, '_self');
+        // In your actual Vite project, you should use the environment variable:
+        // const backendUrl = import.meta.env.VITE_BACKEND_URL;
+        
+        // Using the direct URL here to resolve a compilation environment issue.
+        const backendUrl = 'https://complaint-portal-iiitk-1.onrender.com';
+        
+        if (backendUrl) {
+            // Construct the full, correct login URL
+            const loginUrl = `${backendUrl}/grievance/auth/google`;
+            console.log(`Redirecting to: ${loginUrl}`);
+            // This line performs the actual redirect to the Google sign-in page
+            window.open(loginUrl, '_self');
         } else {
-            console.error("Login API route is not defined.");
+            console.error("Backend URL is not defined.");
         }
     };
 
